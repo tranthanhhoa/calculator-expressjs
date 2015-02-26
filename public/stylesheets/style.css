@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'digital';
+    src: url("../fonts/Quartz_Regular.ttf");
+}
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background: #ddd;
+}
+h1{
+    text-transform: uppercase;
+}
+.simplebox {
+    outline: none;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#calc-form{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #BDBDBD;
+}
+.screen{
+    height: 80px;
+    border-left: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 5px;
+    margin: 0 0 15px 0;
+    position: relative;
+    padding: 5px;
+    background: #F7F7F7;
+}
+.screen span{
+    display: inline-block;
+    font-family: "digital", serif;
+    color: #6C6B6B;
+    line-height: 1;
+    font-size: 30px;
+}
+.x-num{
+
+}
+.y-num{
+
+}
+.operation{
+    margin: 0 5px 0 5px;
+}
+#result{
+    display: block;
+    text-align: right;
+}
+button{
+    outline: none;
+}
+#btn-calc,#btn-clear{
+    border: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #FFF;
+}
+#btn-calc:hover{
+    background: #2957f9;
+}
+#btn-calc{
+    background: #2A9AF9;
+}
+#btn-clear{
+    background: #B3B3B3;
+}
+#btn-clear:hover{
+    background: #a1a1a1;
+}
+.numbers{
+    list-style: none;
+    padding: 0;
+    margin: 0 -3px 15px;
+    width: 199px;
+    float: left;
+}
+.numbers li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 3px;
+    text-align: center;
+}
+.numbers li:hover{
+    cursor: pointer;
+    background: #eeeeee;
+}
+.operations{
+    list-style: none;
+    padding: 0;
+    margin: 0 -3px 15px;
+    width: 73px;
+    float: right;
+}
+.operations li{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #B3B3B3;
+    color: #fff;
+    border-radius: 3px;
+    margin: 3px;
+    text-align: center;
+}
+.operations li:hover{
+    cursor: pointer;
+    background: #a1a1a1;
+}
+a {
+    color: #00B7FF;
+}

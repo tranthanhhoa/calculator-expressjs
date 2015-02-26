@@ -1,0 +1,34 @@
+extends layout
+block content
+    h1(class='text-center')= title
+
+    form(id='calc-form',class='form-inline',method='post')
+        div(class='screen')
+            span(class='x-num')
+            span(class='operation')
+            span(class='y-num')
+            span(id='result')
+        div(class='form-group hidden')
+            input(type='text',id='x',name='x',placeholder='Enter your x number',class='form-control')
+        div(class='form-group hidden')
+            select(class='form-control',id='method',name='method')
+                option(value='add') Add
+                option(value='subtract') Subtract
+                option(value='multiply') Multiply
+                option(value='divide') Divide
+        div(class='form-group hidden')
+            input(type='text',id='y',name='y',placeholder='Enter your y number',class='form-control')
+        ul(class='numbers')
+            -for (var x = 0; x < 10; x++)
+                li= x
+        ul(class='operations')
+            li +
+            li -
+            li x
+            li /
+        button(class="btn btn-default",type='button',id='btn-calc') Calculate
+        button(class="btn btn-default",type='button',id='btn-clear') Clear
+    //p Method:
+    //    span(class='method')
+    //p Result:
+    //    span(class='result')
